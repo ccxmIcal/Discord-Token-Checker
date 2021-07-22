@@ -53,8 +53,10 @@ def check():
                 elif inp == 'n':
                     input('Press any key to exit the proggram.')
                     print('Done')
+            elif len(working) == 0:
+                print(f'{Fore.RED} No valid tokens were found. Or you did not provided any in the tokens.txt file.')
+                input('Press enter to exit.')
     except:
-        print('Nothing lol.')
-
+        input(f'{Fore.RED} There was an error. Dm Sync#5666')
 
 check()
