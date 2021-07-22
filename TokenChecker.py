@@ -15,7 +15,7 @@ def login(token):
         "Authorization": token
     }
 
-    r = requests.get('https://discord.com/api/v6/auth/login', headers=headers)
+    r = requests.get('https://canary.discordapp.com/api/v6/users/@me', headers=headers)
 
     if r.status_code == 200:
         return True
